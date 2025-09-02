@@ -1,0 +1,110 @@
+:root {
+  --bg: #fff;
+  --text: #222;
+  --accent: #007bff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  scroll-behavior: smooth;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  padding: 1em;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin: 0 1em;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.cta {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.75em 1.5em;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cta:hover {
+  transform: scale(1.05);
+}
+
+.hero, .features, .reviews, .pricing, .newsletter, .contact {
+  padding: 3em 1em;
+  text-align: center;
+}
+
+.feature-grid, .review-grid, .pricing-grid {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.feature-card, .review-card, .plan {
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.feature-card:hover, .review-card:hover, .plan:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 0.75em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.footer {
+  background: #f4f4f4;
+  padding: 2em;
+  text-align: center;
+}
+
+#scrollTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.5em;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.dark-mode {
+  --bg: #222;
+  --text: #eee;
+  --accent: #00bfff;
+}

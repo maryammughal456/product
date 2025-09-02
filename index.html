@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar sticky">
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#features">Features</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#newsletter">Newsletter</a>
+      <a href="#contact">Contact</a>
+      <button id="toggleMode">
+        <img src="images/toggle.jpg" alt="Toggle Mode" width="20" />
+      </button>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>SuperWidget</h1>
+      <p>The ultimate tool to boost your productivity</p>
+      <button class="cta">Buy Now</button>
+    </div>
+    <img src="images/hero.jpg" alt="Hero Image" />
+  </section>
+
+  <section id="features" class="features">
+    <h2>Features</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <img src="images/performance.jpg" alt="Fast Performance" width="40" />
+        <h3>Fast Performance</h3>
+        <p>Optimized for speed and efficiency.</p>
+      </div>
+      <div class="feature-card">
+        <img src="images/secure.jpg" alt="Secure" width="40" />
+        <h3>Secure</h3>
+        <p>Top-notch security for your data.</p>
+      </div>
+      <div class="feature-card">
+        <img src="images/custom.jpg" alt="Customizable" width="40" />
+        <h3>Customizable</h3>
+        <p>Tailor it to your workflow.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews">
+    <h2>Testimonials</h2>
+    <div class="review-grid">
+      <div class="review-card">
+        <img src="images/jane.jpg" alt="Jane Doe" width="50" />
+        <h4>Jane Doe</h4>
+        <p>Product Manager</p>
+        <blockquote>"SuperWidget changed how I work. It's amazing!"</blockquote>
+      </div>
+      <div class="review-card">
+        <img src="images/john.jpg" alt="John Smith" width="50" />
+        <h4>John Smith</h4>
+        <p>Developer</p>
+        <blockquote>"Fast, reliable, and easy to use. Highly recommended."</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <h2>Pricing Plans</h2>
+    <div class="pricing-grid">
+      <div class="plan">
+        <h3>Basic</h3>
+        <p>$9/month</p>
+        <button class="cta">Choose Plan</button>
+      </div>
+      <div class="plan">
+        <h3>Pro</h3>
+        <p>$29/month</p>
+        <button class="cta">Choose Plan</button>
+      </div>
+      <div class="plan">
+        <h3>Enterprise</h3>
+        <p>Contact Us</p>
+        <button class="cta">Get Quote</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="newsletter" class="newsletter">
+    <h2>Subscribe to Our Newsletter</h2>
+    <form id="newsletterForm">
+      <input type="email" id="newsletterEmail" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div id="successMessage" class="hidden">Thank you! We'll be in touch soon.</div>
+  </section>
+
+  <footer class="footer">
+    <div class="links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Support</a>
+    </div>
+    <div class="social">
+      <img src="images/web.jpg" alt="Website" width="24" />
+      <img src="images/twitter.jpg" alt="Twitter" width="24" />
+      <img src="images/fb.jpg" alt="Facebook" width="24" />
+    </div>
+    <p>&copy; 2025 SuperWidget Inc.</p>
+  </footer>
+
+  <button id="scrollTop">
+    <img src="images/arrow.jpg" alt="Scroll to Top" width="20" />
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
